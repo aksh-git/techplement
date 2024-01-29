@@ -1,10 +1,10 @@
-**_Express-Mongoose Starter: A minimalistic Node.js application using Express and Mongoose for MongoDB, ready for deployment. Easily fork, deploy, and customize; Includes middleware for JWT authentication and password hashing._**
-
 # API Documentation
 
-## API Endpoints
+**_Express-Mongoose Starter: A minimalistic Node.js application using Express and Mongoose for MongoDB, ready for deployment. Easily fork, deploy, and customize; Includes middleware for JWT authentication and password hashing._**
 
-## User Authentication
+## API-Endpoints
+
+## User authentication
 
 - Base path: `/api/auth`
 
@@ -246,7 +246,9 @@ Step-by-step instructions to fork/copy this repository, deploy it on Render.com,
      - `JWT_SECRET`: A secret key for JWT token generation.
 
 7. Click on "Create Web Service."
-8. Wait for the deployment to complete. Render will automatically provide a URL for your application.
+8. Wait for the deployment to complete. 
+
+Render will automatically provide a URL for your application.
 
 ### Final Steps
 
