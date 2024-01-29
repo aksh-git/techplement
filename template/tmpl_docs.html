@@ -3,7 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>README Viewer</title>
+    <meta
+      name="description"
+      content="Express-Mongoose Starter: A minimalistic Node.js application using Express and Mongoose for MongoDB, ready for deployment. Easily fork, deploy, and customize; Includes middleware for JWT authentication and password hashing"
+    />
+    <meta
+      name="keywords"
+      content="Node, js, javascript, express, api, backend, auth"
+    />
+    <title>API documentation</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css"
@@ -17,6 +25,7 @@
         margin: 0 auto;
         overflow-x: hidden;
         background-color: #f8f8f8;
+        scroll-behavior: smooth;
       }
 
       .markdown-body {
@@ -74,6 +83,10 @@
       .container main {
         flex-grow: 1;
       }
+      
+      .markdown-body pre {
+        background-color: #e3e3e3;
+      }
 
       @media (min-width: 1024px) {
         .table-of-contents {
@@ -96,10 +109,10 @@
     </style>
   </head>
   <body>
-    <div class="container">
+    <main class="container">
       <aside class="table-of-contents"><!--TOC--></aside>
-      <main class="markdown-body"><!--HTML_CONTENT--></main>
-    </div>
+      <article class="markdown-body"><!--HTML_CONTENT--></article>
+    </main>
     <!-- "Move to Top" button -->
     <button id="moveToTopButton" onclick="scrollToTop()">
       &uArr; Move to Top

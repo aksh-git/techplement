@@ -2,22 +2,6 @@
 
 # API Documentation
 
-## Table of contents
-
-0. [API Endpoints](#api-endpoints)
-   - [User Authentication](#user-authentication)
-     - [/signup](#signup)
-     - [/login](#login)
-   - [Manage User](#manage-user)
-     - [/getById](#getById)
-     - [/update](#update)
-     - [/deleteMe](#deleteme)
-1. [Setup and Deployment](#setup-and-deployment)
-   - [Fork/Clone the project](#forking-the-repository)
-   - [Deploy](#deploy)
-   - [Final Steps](#final-steps)
-2. [Contact](#contact)
-
 ## API Endpoints
 
 ## User Authentication
@@ -45,11 +29,11 @@
 | email       | string | Email address for the new account. | Yes      | Valid email address           |
 | password    | string | Password for the new account.      | Yes      | Strong password               |
 
-**Example Request:**
+**Example request:**
 
 ```http
 POST /api/auth/signup HTTP/1.1
-Host: your-api-host
+Host: simple-user-auth-node-be.onrender.com
 Content-Type: application/json
 
 {
@@ -60,7 +44,7 @@ Content-Type: application/json
 }
 ```
 
-**Example Response:**
+**Example response:**
 
 ```json
 {
@@ -91,11 +75,11 @@ Content-Type: application/json
 | email     | string | Email address for authentication. | Yes      | Valid email address |
 | password  | string | Password for authentication.      | Yes      | Valid password      |
 
-**Example Request:**
+**Example request:**
 
 ```http
 POST /api/auth/login HTTP/1.1
-Host: your-api-host
+Host: simple-user-auth-node-be.onrender.com
 Content-Type: application/json
 
 {
@@ -104,7 +88,7 @@ Content-Type: application/json
 }
 ```
 
-**Example Response:**
+**Example response:**
 
 ```json
 {
@@ -161,11 +145,11 @@ Content-Type: application/json
 
 > Pass parameters which you want to update.
 
-**Example Request:**
+**Example request:**
 
 ```http
 PUT /api/user/update HTTP/1.1
-Host: your-api-host
+Host: simple-user-auth-node-be.onrender.com
 Content-Type: application/json
 Authorization: Bearer YOUR_AUTH_TOKEN
 
@@ -176,7 +160,7 @@ Authorization: Bearer YOUR_AUTH_TOKEN
 }
 ```
 
-**Example Response:**
+**Example response:**
 
 ```json
 {
@@ -203,14 +187,14 @@ Authorization: Bearer YOUR_AUTH_TOKEN
 | ------------- | ---------------------- | ---------------------------------- |
 | Authorization | Bearer YOUR_AUTH_TOKEN | JWT token for user authentication. |
 
-**Example Request:**
+**Example request:**
 
 ```http
 DELETE /api/user/deleteMe HTTP/1.1
 Authorization: Bearer YOUR_AUTH_TOKEN
 ```
 
-**Example Response:**
+**Example response:**
 
 ```json
 {
@@ -226,12 +210,12 @@ Authorization: Bearer YOUR_AUTH_TOKEN
 
 Step-by-step instructions to fork/copy this repository, deploy it on Render.com, and set up environment variables at zero cost.
 
-### Forking the Repository
+### Forking the repository
 
 - Click on the "Fork" button in the upper right corner of the repository page.
 - Choose the account or organization where you want to fork the repository.
 
-### Cloning the Forked Repository
+### Cloning the forked repository
 
 - Clone the forked repository to your local machine:
 
@@ -274,6 +258,6 @@ Step-by-step instructions to fork/copy this repository, deploy it on Render.com,
 If you encounter any type of error or bug in any phase, or need any other help or just to talk about anything :)
 Ping me:
 
-     - Discord : ydevakash
+  - Discord : ydevakash
 
 **_Have a great day!_**
